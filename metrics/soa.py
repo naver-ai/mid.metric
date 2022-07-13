@@ -21,7 +21,7 @@ class SemanticObjectAccuracy(Metric):
     r"""
     Calculates the Semantic Object Accuracy which is used to assess the 
     alignment between the conditional texts and the generated images. This
-    metric is a little different from SOA-I and SOA-C since this is piece-wise
+    metric is a little different from SOA-I and SOA-C since this is a piece-wise
     evaluating metric of SOA-I.
 
     Args:
