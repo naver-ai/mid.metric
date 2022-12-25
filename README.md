@@ -58,14 +58,14 @@ EVAL_MODEL=ViT-L/14 python main.py
 
 ## Citation
 
-We humbly encourage you to consider citing our work if you use this repository:
+We humbly encourage you to consider citing our work if you use this work:
 
 ```
-@article{Kim2022mid,
-    title = {{Mutual Information Divergence: A Unified Metric for Multimodal Generative Models}},
+@inproceedings{kim2022mid,
+    title = {{M}utual {I}nformation {D}ivergence: A Unified Metric for Multimodal Generative Models},
     author = {Kim, Jin-Hwa and Kim, Yunji and Lee, Jiyoung and Yoo, Kang Min and Lee, Sang-Woo},
-    journal = {arXiv preprint arXiv:2205.13445},
-    url = {http://arxiv.org/abs/2205.13445},
+    booktitle = {Advances in Neural Information Processing Systems 35},
+    url = {https://openreview.net/forum?id=wKd2XtSRsjl}
     year = {2022}
 }
 ```
