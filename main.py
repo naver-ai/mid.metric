@@ -189,6 +189,7 @@ if "__main__" == __name__:
         print(f"[INFO] score cache is loaded from `{cache_path}`.")
 
     label = label[:limit, 1]  # select the text-image alignment judgments
+    label = label.cpu()
     mask = label > 0  # the mask of valid 2k judgments
     label = label[mask]  # select valid 2k judgments
     results = [x[mask] for x in results]  # select 2k evaluating samples
