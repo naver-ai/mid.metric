@@ -228,7 +228,7 @@ class SemanticObjectAccuracy(Metric):
                 accuracy.append(-1)
             else:
                 accuracy.append(
-                    sum([1. for x in preds if x in labels]) / len(labels))
+                    sum([1. for x in set(preds) if x in labels]) / len(labels))
         accuracy = torch.Tensor(accuracy)
         if 0 < division_by_zero:
             print(f"warning: {division_by_zero} samples have no detection.")
